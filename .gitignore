@@ -1,0 +1,20 @@
+# Environment variables
+.env
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Chainlit
+.chainlit/
+!/.chainlit/config.toml
+!/.chainlit/translations
+
+# OS specific
+.DS_Store
+Thumbs.db
