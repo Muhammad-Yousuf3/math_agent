@@ -6,8 +6,6 @@ load_dotenv()
 
 # API Configuration
 API_KEY = os.getenv("GEMINI_API_KEY")
-if not API_KEY:
-    raise ValueError("GEMINI_API_KEY not found in environment variables. Please set it in a .env file.")
 
 # We use the OpenAI compatible endpoint for Gemini
 BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai/"

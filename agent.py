@@ -5,6 +5,9 @@ from tools import calculate, CALCULATOR_TOOL_DEFINITION
 
 class PythagorasAgent:
     def __init__(self):
+        if not API_KEY:
+            raise ValueError("GEMINI_API_KEY not found. Please set it in the Space Settings > Secrets.")
+
         # Initialize the client to point to Google's Gemini via OpenAI compatibility
         self.client = OpenAI(
             api_key=API_KEY,
